@@ -1,0 +1,36 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.game {
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hole.mole::before {
+  content: "🐹";
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
